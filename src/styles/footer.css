@@ -1,0 +1,29 @@
+/* Footer Styles */
+.main-footer {
+    background-color: #062628;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.main-footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    display: block; /* Ensure icons are treated as block elements for consistent rendering */
+}

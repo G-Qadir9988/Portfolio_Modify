@@ -1,0 +1,276 @@
+/* Premium Advanced Dark Base Theme Override for Hero */
+.advanced-hero {
+    position: relative;
+    background: #030f10 !important; /* Rich deep cyber dark tone */
+    color: #ffffff !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 80px 0 !important;
+}
+
+/* Mouse-Following Spotlight Mesh Layer */
+.mouse-glow {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(19, 128, 134, 0.15) 0%, rgba(0,0,0,0) 70%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: width 0.2s, height 0.2s;
+}
+
+/* Abstract Animated Ambient Blobs */
+.animated-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 1;
+    opacity: 0.3;
+    animation: blobMorph 8s infinite alternate;
+}
+.blob-1 {
+    top: 10%;
+    right: 15%;
+    width: 300px;
+    height: 300px;
+    background: #138086;
+}
+.blob-2 {
+    bottom: 15%;
+    left: 10%;
+    width: 250px;
+    height: 250px;
+    background: #7b2cbf; /* Premium sleek purple asset accent color */
+}
+
+@keyframes blobMorph {
+    0% { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; transform: translate(0px, 0px) scale(1); }
+    100% { border-radius: 70% 30% 52% 48% / 60% 40% 60% 40%; transform: translate(30px, -50px) scale(1.1); }
+}
+
+/* Content Framework Setup */
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    z-index: 5;
+}
+
+.hero-left-content {
+    flex: 1 1 500px;
+}
+
+.hero-right-content {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+}
+
+/* High-Impact Typography & Text Gradients */
+.hero-greeting {
+    font-size: 3.5rem !important;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.animated-gradient-text {
+    background: linear-gradient(45deg, #138086, #9d4edd, #42999e);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 4s linear infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-typing-subtitle {
+    font-size: 1.8rem;
+    color: #42999e;
+    font-weight: 600;
+    margin-bottom: 20px;
+    min-height: 40px; /* Prevents layout layout shifting */
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #b0c4c5;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* Premium Floating Tech Badges */
+.floating-tech-icon {
+    position: absolute;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 2;
+    pointer-events: none;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+/* High-End Glassmorphism Card System Layout */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(16px) saturate(120%);
+    -webkit-backdrop-filter: blur(16px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 24px !important;
+    padding: 25px !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4) !important;
+    width: 100%;
+    max-width: 420px;
+    transition: transform 0.1s ease-out;
+}
+
+.card-profile-wrapper {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 20px auto 0 auto;
+}
+
+.premium-avatar {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 50% !important;
+    border: 4px solid #138086 !important;
+    box-shadow: 0 0 25px rgba(19, 128, 134, 0.4);
+}
+
+.avatar-status-badge {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 22px;
+    height: 22px;
+    background: #00ffcc;
+    border: 4px solid #030f10;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+/* Call-to-Action Interactive Buttons */
+.hero-cta-group {
+    display: flex;
+    gap: 20px;
+}
+
+.cta-btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.primary-cta {
+    background: #138086;
+    color: #ffffff;
+}
+
+.secondary-cta {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Interactive Mouse Scroll Indicator icon mapping */
+.scroll-indicator-mouse {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28px;
+    height: 45px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+    z-index: 5;
+}
+
+.mouse-wheel-scroll {
+    width: 4px;
+    height: 10px;
+    background: #138086;
+    border-radius: 4px;
+    animation: mouseScrollAnimation 1.6s infinite ease-in-out;
+}
+
+@keyframes mouseScrollAnimation {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(14px); opacity: 0; }
+}
+
+/* Mobile Adaptive Viewports */
+@media (max-width: 768px) {
+    .hero-greeting { font-size: 2.5rem !important; text-align: center; }
+    .hero-typing-subtitle { font-size: 1.4rem; text-align: center; }
+    .hero-wrapper { text-align: center; justify-content: center; }
+    .hero-cta-group { justify-content: center; }
+    .floating-tech-icon { display: none; }
+    .mouse-glow { display: none; }
+}
+
+/* Enlarged Glass Card Dimensions */
+.glass-card.enlarged-card {
+    max-width: 460px !important;
+    padding: 35px !important;
+}
+
+/* Scaled Image Frame Container */
+.card-profile-wrapper.large-profile {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+/* Responsive Adaptive Sizing for Mobile Screens */
+@media (max-width: 768px) {
+    .card-profile-wrapper.large-profile {
+        width: 240px;
+        height: 240px;
+    }
+    .glass-card.enlarged-card {
+        padding: 20px !important;
+    }
+
+    /* Core Section Wrapping Constraints */
+.advanced-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #030f10; /* Clean dark theme fallback base layer */
+}
+
+/* Forces structural content text column layers above WebGL background nodes */
+.hero-left-content,
+.hero-right-content {
+    position: relative;
+    z-index: 5 !important;
+}
+
+/* Ensure buttons remain clickable over the canvas backdrop */
+.hero-cta-group a {
+    position: relative;
+    z-index: 10 !important;
+}
+}
