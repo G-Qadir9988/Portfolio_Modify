@@ -6,7 +6,10 @@ const CERTIFICATES = [
   { id: 1, title: "Letter of Recommendation", subtitle: "Internship", img: "/images/cert1.png" },
   { id: 2, title: "Certificate of Training", subtitle: "Wiley Research Trainin", img: "/images/cert2.png" },
   { id: 3, title: "Appreciation Certificate", subtitle: "Achievement", img: "/images/ceritificate of appreciation.jpg" },
-  { id: 4, title: "Internship Certificate", subtitle: "Professional Training", img: "/images/courseera AI.png" }
+  { id: 4, title: "Introduction To AI Certificate", subtitle: "Google Cloud Certification", img: "/images/courseera Intr AI.png" },
+  { id: 5, title: "Introduction To Generative AI", subtitle: "Google Cloud Certification", img: "/images/courseera AI.png" },
+  { id: 6, title: "Foundation Of  AI and ML", subtitle: "Microsoft Certification", img: "/images/courseera Foundation.png" },
+
 ];
 
 const Gallery = () => {

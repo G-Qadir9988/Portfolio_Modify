@@ -70,6 +70,12 @@ const Certifications = () => {
             <h3>🏆 Certificate of Appreciation</h3>
             <p>Secured <strong>34<sup>th</sup> position</strong> in SSC Examination 2020 with <strong>1064/1100</strong> marks (Federal Board). Received a formal certificate of appreciation from FBISE.</p>
           </div>
+
+<div className="achievement-item">
+            <h3>🏆 Certifications of Ecoursera</h3>
+            <p>Completed various courses on Ecoursera, earning certificates in AI, ML, and web development.</p>
+          </div>
+
         </div>
       </div>
     </section>
