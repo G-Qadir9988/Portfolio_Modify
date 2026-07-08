@@ -9,7 +9,7 @@ const CERTIFICATES = [
   { id: 4, title: "Introduction To AI Certificate", subtitle: "Google Cloud Certification", img: "/images/courseera Intr AI.png" },
   { id: 5, title: "Introduction To Generative AI", subtitle: "Google Cloud Certification", img: "/images/courseera AI.png" },
   { id: 6, title: "Foundation Of  AI and ML", subtitle: "Microsoft Certification", img: "/images/courseera Foundation.png" },
-
+  { id: 7, title: "Python", subtitle: "Google Cloud Certification", img: "/images/python.png" },
 ];
 
 const Gallery = () => {
